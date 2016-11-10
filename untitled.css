@@ -1,0 +1,15 @@
+
+	body{
+		background-color: black;
+		color: red;
+	}
+	h1{
+		font-size: 24px
+	}
+	p{
+		font-family: Arial, sans-serif;
+		color: orange;
+	}
+	a{
+		color: white;
+	}
