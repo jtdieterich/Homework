@@ -1,0 +1,282 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: 'Open Sans', sans-serif;
+}
+
+#content{
+  height: 1300px;
+  background-color: #f0efef
+
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+.container {
+  width: 960px;
+  margin: auto;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  padding: 30px;
+  background-color: #033048;
+  overflow: auto;
+}
+
+header h1{
+  color: #fff;
+  float: left;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+nav{
+  float: right;
+  padding-right: 50px;
+  width: 580px;
+}
+
+nav ul li{
+  display: inline;
+  padding-left: 20px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #f9e42e;
+  padding-left: 20px; 
+  font-size: 20px;
+}
+
+nav ul li a:hover{
+  font-weight: 800;
+  color: red;
+}
+
+#main{
+  height: 500px;
+  background-color: #f0efef;
+}
+
+#posts{
+  padding-top: 30px;
+  background-color: #f0efef;
+  height: 900px;
+  float: left;
+  width: 700px;
+}
+
+.title{
+  font-weight: 300;
+  color: black;
+  font-size: 24px;
+  width: 350px;
+  font-size: 24px;
+  font-weight: 600;
+  width: 700px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#ads{
+  height: 900px;
+  background-color: #f0efef;
+  width: 240px;
+  float: right;
+  display: block;
+  text-decoration: none;
+}
+
+h1 #about_relaxr{
+  color: #606161;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+p.block{
+  overflow: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 15px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-style: solid;
+  border-color: black;
+}
+
+p.block::first-letter {
+  font-size: 40px;
+  float: left;
+}
+
+.read_more{
+  text-decoration:none;
+  font-size: 24px;
+  float: right;
+  color: black;
+  padding-top: 10px;
+}
+
+.read_more:hover{
+  font-weight: 800;
+  color: red;
+}
+
+aside ul li a{
+  text-decoration: none;
+  font-size: 20px;
+  color: #606161;
+}
+
+aside ul li a:hover{
+  font-weight: 800;
+  color: red;
+}
+
+.aside_header{
+  color: #606161;
+  font-size: 24px;
+  font-weight: 800;
+  padding-bottom: 15px;
+  padding-top: 40px;
+}
+
+p.about{
+  overflow: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+
+#learn_more{
+  color: #606161;
+  font-weight: 800;
+  font-size: 15px;
+  text-decoration:none;
+  display: block;
+  float: left;
+}
+
+#learn_more:hover{
+  font-weight: 900;
+  color: red;
+}
+
+#ad_u{
+  padding-top: 40px;
+  height: 500px;
+  width: 200px;
+}
+
+#signup_now{
+ clear: both;
+ background-color: #f9e42e;
+ height: 100px;
+ padding-top: 30px;
+ padding-right: 20px;
+ padding-left: 20px;
+}
+
+footer a{
+  display: block;
+  width: 200px;
+  margin: auto;
+  background-color: #033048;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  padding-top: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-weight: 900;
+  text-align: center;
+  overflow: auto;
+  clear: both;
+  margin: auto;
+}
+
+#logo{
+  font-weight: 900;
+  font-size: 24px;
+  color: #f9e42e;
+  text-align: center;
+}
+
+footer {
+  background-color:#121212;
+  height: 300px;
+  color: white;
+}
+
+.social_nets{
+  padding: 5px;
+  text-align: center;
+
+}
+
+.copyright{
+  text-align: center;
+  font-size: 9px;
+  font-weight: 400;
+  padding-top: 50px;
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
+
