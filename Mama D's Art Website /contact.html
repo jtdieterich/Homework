@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Carole Dieterich Art</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/contact.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<header id="page-header">
+		<div class="wrapper">
+			<h1><a href="index.html">Carole Dieterich Art</a></h1>
+			<nav>
+					<ul class="topnav" id="myTopnav">
+					<li class="rightnav"><strong><a href="about.html">About Carole</a></strong></li>
+					<li class="rightnav"><strong><a href="gallery.html">Gallery</a></strong></li>
+					<li class="rightnav"><strong><a href="commission.html">Commission/ Original</a></strong></li>
+					<li class="rightnav"><strong><a href="contact.html">Contact</a></strong></li>
+					<li class="icon">
+	    				<div class="container" onclick="myFunction(this)">
+						  <div class="bar1"></div>
+						  <div class="bar2"></div>
+						  <div class="bar3"></div>
+						</div>
+	  				</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+			<h1 id="carole">Contact Carole</h1>
+			<h2 id="carole">Carole’s works are available for purchase or she can do commissions. Please contact her to discuss.</h2>
+	<div class="image">
+    <div id="registration" class="container">
+      <div class="error-box">
+      </div>
+      <form id="myform" name="registration" method="post">
+        <fieldset>
+          <legend>Your Contact Info</legend>
+          <br/>
+          <!-- Let the "First name" input field automatically get focus when the page load -->
+          <div class="form-row">    
+            <input type="text" name="first_name" id="first_name" class="text required" autofocus>
+            <label for="first_name">First Name</label>
+          </div>
+              
+          <div class="form-row">    
+            <input type="text" name="last_name" id="last_name">
+            <label for="last_name">Last Name</label>
+          </div>
+
+          <div class="form-row">
+            <input type="text" name="phone_number" maxlength="10" id="phone_number">
+            <label for="phone_number">Phone Number</label>
+          </div>
+
+          <div class="form-row">
+            <input type="text" name="street_address_1" id="street_address_1">
+            <label for="street_address_1">Street Address</label>
+          </div>
+          <div class="form-row">
+            <input type="text" name="street_address_2" id="street_address_2">
+            <label for="street_address_2">Street Address</label>
+          </div>
+          <div class="form-row">
+            <input type="text" name="city" id="city">
+            <label for="city">City</label>
+          </div>
+          <div class="form-row">
+            <input type="text" name="state" id="state">
+            <label for="state">State</label>
+          </div>
+          <div class="form-row">
+            <input type="text" name="postal_code" id="zipcode">
+            <label for="zipcode">Postal Code</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="form-row select">
+            <label for="comments">Comments</label>
+            <textarea id="comments"></textarea>
+          </div>
+        </fieldset>
+        <fieldset>
+          <input type="submit" value="Submit" class="submit-button" />
+        </fieldset>
+      </form>
+    </div>
+    <footer>
+		<h3><a href="mailto:caroledieterich@yahoo.com"><img id= "e-mail" src="images/images.png" alt=""></a> | <a href="https://www.facebook.com/carole.dieterich?fref=ts"><img src="images/facebook.png" alt="fb" style="color: blue"></a></h3>
+					<h3>Call: (303) 475-2965</h3>
+	</footer>	
+	<script src=js/forms.js></script>
+</body>
+</html>

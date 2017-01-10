@@ -1,0 +1,46 @@
+body {
+  margin:0;
+  background: #eee;
+}
+/* nav bar */
+a {
+  display: inline-block;
+  color: grey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 25px;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: auto;
+  margin-top: 20px;
+  border-bottom-width: 10px;
+  border-top-width: 2px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-style: solid;
+  border-color: black;
+  overflow: auto;
+}
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1;
+}
+
+#page-header h1 a {
+  float: left;
+  color: black;
+  font-size: 1em;
+  margin: 10px 0 0 0;
+  text-decoration: none;
+
+}
+
+li.rightnav {
+  text-align: center;
+}
