@@ -1,0 +1,293 @@
+
+
+body {
+  margin:0;
+  background: #eee;
+  height:100%;
+}
+/* nav bar */
+a {
+  display: inline-block;
+  color: grey;
+  text-align: center;
+  padding: 0.875em 1em;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 1.563em;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: auto;
+  margin-top: 20px;
+  border-bottom-width: 10px;
+  border-top-width: 2px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-style: solid;
+  border-color: black;
+  overflow: auto;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1;
+}
+
+#page-header h1 a {
+  float: left;
+  color: black;
+  font-size: 1em;
+  margin: 10px 0 0 0;
+  text-decoration: none;
+
+}
+
+li.rightnav {
+  text-align: center;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  float: right;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: grey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.box {
+    max-width:100%;
+    max-height:100%;
+}
+/* hamburger */
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+#page-header h1 a:hover {background-color: #555;}
+
+ul.topnav li a:hover {background-color: #555;}
+
+h3 a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+
+#content {
+  height: 1150px;
+}
+
+/* paintings slide bar */
+
+.gallery {
+  height: 400px;
+  width: 600px;
+}
+
+.banner {
+  overflow: auto;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+img.art{
+   width: 75%; 
+   margin: auto;
+ }
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: grey;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+/* about Carole section */
+#about {
+  background-color: black;
+  width: 240px;
+  display: block;
+  text-decoration: none;
+  padding-right: 10%;
+  padding-top: 1%;
+  margin: auto;
+  width: 75%;
+  padding-right: 2%;
+  padding-left: 2%;
+  overflow: auto;
+}
+
+#mama {
+  float: left;
+  display: inline;
+  height: auto;
+  width: 20%;
+  padding-top: 7%;
+  padding-right: 5%;
+}
+
+#blurb {
+  font-size: 25px;
+  float: right;
+  color: white;
+  display: inline;
+  width: 75%;
+}
+
+#h1 {
+  text-align: center;
+}
+
+#about_carole {
+  background-color:    #CCCCCC;
+}
+
+#read_more {
+  font-size: 30px;
+  text-align: center;
+}
+
+#read_more:hover {background-color: #555;}
+
+
+/* contact info footer*/
+
+.contact {
+  text-align: center;
+  max-width: 1280px;
+  margin: auto;
+  border-bottom-width: 2px;
+  border-top-width: 10px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-style: solid;
+  border-color: black;
+  overflow: auto;
+  height: 200px;
+}
+
+/* footer stays at bottom */
+
+#container {
+   min-height:100%;
+   position:relative;
+}
+#header {
+   padding:10px;
+}
+#body {
+   padding:10px;
+   padding-bottom:200px;   /* Height of the footer */
+}
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:200px;   /* Height of the footer */
+}
+
+#contact_btn:hover {background-color: #555;}
+
+#contact_btn {
+  margin-top: 1%;
+  border-radius: 4px;
+  background-color: #72c5f7;
+}
+
+#btn {
+  color: black;
+}
+
+
+@media screen and (max-width:900px) {
+  ul.topnav li.rightnav {display: none;}
+  ul.topnav li.icon {
+    display: inline-block;
+  }
+  #slider {
+    width: 5%;
+  }
+  .slider_option{
+    display: none;
+  }
+  ul.topnav.responsive {
+    position: relative;
+    display: block;
+  }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: block;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: right;
+  }
+}
