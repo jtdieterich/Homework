@@ -1,0 +1,183 @@
+
+/* Paint Splatter Effect */
+.circle {
+  /* display:none; */
+  position: absolute;
+  top: 165px;
+  left: 40%;
+  z-index: 800;
+  background: #f49b21;
+  border-radius: 50%;
+  height: 170px;
+  width: 160px;
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: .20s;
+  animation-duration: .30s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.content {
+  position: relative;
+  top: 50px;
+  width: 100%;
+  text-align: center;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1.0s;
+  animation-duration: 1.0s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.5s;
+}
+.splatter {
+  position: absolute;
+  top: 160px;
+  left: 39%;
+  z-index: 799;
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: .1s;
+  animation-duration: .1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; 
+  -webkit-animation-delay: .1s;
+  animation-delay: .2s; 
+  height: 241px;
+  width: 230px;
+
+}
+
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+            transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+            transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+          animation-name: zoomIn;
+}
+
+#splatter-writing {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-left: 5px;
+  font-family: "Comic Sans MS";
+}
+
+/* Gallery Styling */
+#gallery-images {
+    padding: 10% 0 15% 0;
+    overflow: auto;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: grey;}
+
+/* Show the dropdown menu on hover */
+#dropdown_1:hover + #dropdown_content_1 {
+    display: block;
+}
+
+#dropdown_2:hover + #dropdown_content_2 {
+    display: block;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+/* Contact Carole Button in Box */
+#carole-btn {
+    padding-left: 30%;
+}
+
+@media screen and (max-width:900px) {
+  ul.topnav li.rightnav {display: none;}
+  #slider {
+    width: 5%;
+  }
+  .slider_option{
+    display: none;
+  }
+    ul.topnav.responsive {
+    position: relative;
+    display: block;
+  }
+  ul.topnav.responsive li.icon{
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: block;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+

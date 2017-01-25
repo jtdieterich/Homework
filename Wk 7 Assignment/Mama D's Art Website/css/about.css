@@ -1,0 +1,76 @@
+#write-up {
+  background-image: url('../images/img2_3.jpg');
+  max-width: 1280px;
+  display: block;
+  text-decoration: none;
+  padding-right: 10%;
+  border-top: 40px;
+  margin: 10px auto 10px auto;
+  padding-right: 2%;
+  padding-left: 2%;
+  overflow: auto;
+  height: 700px;
+}
+
+#mama {
+  float: left;
+  display: inline;
+  height: auto;
+}
+
+.banner {
+  padding: 10px 0 15% 0;
+  overflow: auto;
+}
+
+#blurb {
+  font-size: 25px;
+  float: right;
+  color: white;
+  display: inline;
+  width: 75%;
+  background-color: grey;
+  border-radius: 4px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#h1 {
+  text-align: center;
+}
+
+#about_carole {
+  background-color:    #CCCCCC;
+}
+
+@media screen and (max-width:850px) {
+  ul.topnav.responsive {
+    position: relative;
+    display: block;
+  }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: block;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  ul.topnav li.rightnav {display: none;}
+  ul.topnav li.icon {
+    display: inline;
+  }
+  #slider {
+    width: 5%;
+  }
+  .slider_option{
+    display: none;
+  }
+}

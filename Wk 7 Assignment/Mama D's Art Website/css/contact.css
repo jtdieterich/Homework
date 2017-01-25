@@ -1,0 +1,241 @@
+/* main body style with image */
+.image {
+  text-align: center;
+  max-width: 1280px;
+  margin: auto;
+  margin-top: 20px;
+  border-bottom-width: 2px;
+  border-top-width: 10px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-style: solid;
+  border-color: black;
+  overflow: auto;
+  margin-bottom: 25px;
+  background: url(../images/img1_3.jpg);
+}
+
+fieldset{
+  border: none;
+  background-color: #fcfeff;
+}
+
+legend{
+  margin-bottom: 30px;
+  font-size: 1.5em;
+  color: rgba(0,0,0,0.5);
+}
+/* remove the default styling around input element */
+input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid #757575;
+}
+
+input:focus{ 
+  outline: none; /* remove default outline when focused */ 
+  bottom: 1px;
+  border-bottom:3px solid #5264AE; 
+/*  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;*/
+}
+
+/* LABEL ======================================= */
+label          {
+  color: #999; 
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all; 
+  -moz-transition: 0.2s ease all; 
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+/* moves the label out of text box */
+/* changes font size of label to be smaller */
+/* The general sibling combinator is made of the "tilde"
+   (U+007E, ~) character that separates two sequences of 
+   simple selectors. The elements represented by the 
+   two sequences share the same parent in the 
+   document tree and the element represented 
+   by the first sequence precedes 
+   (not necessarily immediately) the element 
+   represented by the second one.
+*/
+input:focus ~ label {
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+/* any input box that's filled, remove the label */
+input.filled ~ label{
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;  
+}
+
+input.filled.error ~ label{
+  top:-20px;
+  font-size:14px;
+  color: red; 
+}
+
+input.filled.error{
+  border-bottom:3px solid red;
+}
+
+.reg-container    { 
+  font-family:'Arial';
+  width: 35%;
+  min-width: 600px; 
+  margin: 5% 5%; 
+  display: block; 
+  background: #FFF;
+  padding: 10px 50px 50px;
+  border-radius: 15px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.form-row  {
+  /* add space to the bottom of each form element */
+  position: relative; 
+  margin-bottom: 45px;
+  width: 45%;
+  display: inline-block;
+}
+
+.form-row.select{
+  display: inline-block;
+  position: static;
+  width: 90%;
+  height: 10%;
+}
+
+/* Style Select Field */
+select {
+  background-color: transparent;
+  width: 50%;
+  padding: 4px 0;
+  color: rgba(0,0,0,0.26); /* gray out a little bit */
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+textarea{
+  width: 100%;
+}
+
+.no-display{
+  display: none;
+}
+
+select:focus {
+  outline: none
+}
+
+.form-row.select label{
+  position: static;
+  padding-right: 50px;
+}
+
+.submit-button{
+  display: inline-block;
+  width: 20%;
+  background-color: grey;
+  color: white;
+  border-radius: 3px;
+  margin-right: 20px;
+}
+
+.submit-button:hover{
+  background-color: black;
+}
+
+#myform{
+  margin-top: 20px;
+  background-image: url("images/img1_3.jpg");
+}
+.error-box{
+  padding: 20px;
+  display: none;
+  width: 100%;
+  background-color: #FAD3C4;
+  border: 1px solid #A75B4E;
+}
+
+body {
+  margin:0;
+  background: #eee;
+}
+/* nav bar */
+a {
+  display: inline-block;
+  color: grey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 25px;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1;
+}
+
+#carole {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  text-align: center; 
+}
+
+
+#page-header h1 a {
+  float: left;
+  color: black;
+  font-size: 1em;
+  margin: 10px 0 0 0;
+  text-decoration: none;
+}
+
+li.rightnav {
+  text-align: center;
+}
+
+@media screen and (max-width:900px) {
+  ul.topnav.responsive {
+    position: relative;
+    display: block;
+  }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: block;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  ul.topnav li.rightnav {display: none;}
+
+  #slider {
+    width: 5%;
+  }
+  .slider_option{
+    display: none;
+  }
+}

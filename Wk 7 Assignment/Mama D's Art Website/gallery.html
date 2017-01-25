@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Carole Dieterich Art</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/gallery.css">
+	<link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header id="page-header">
+		<div class="wrapper">
+			<h1><a href="index.html">Carole Dieterich Art</a></h1>
+			<nav>
+					<ul class="topnav" id="myTopnav">
+					<li class="rightnav"><strong><a href="about.html">About Carole</a></strong></li>
+					<li class="rightnav"><strong><a href="gallery.html">Gallery</a></strong></li>
+					<li class="rightnav"><strong><a href="contact.html">Contact</a></strong></li>
+					<li class="icon">
+	    				<div class="container" onclick="myFunction(this)">
+						  <div class="bar1"></div>
+						  <div class="bar2"></div>
+						  <div class="bar3"></div>
+						</div>
+	  				</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+<div class="circle">
+  <div class="content">
+    <p id="splatter-writing">Welcome to Carole's <br> Art Gallery</p>
+  </div>
+</div>
+<img class="splatter" src="http://static.indigoimages.ca/2015/shop/orange-paint-splatter.png">
+
+<div id="gallery-images">
+
+<div class= "col-lg-12">
+            <div class="col-lg-4 col-md-4 col-s-6 col-xs-12 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Carole Dieterich Original" data-image="images/img1.jpg" data-target="#image-gallery">
+                <img class="img-responsive" src="images/img1.jpg" alt="Short alt text">
+            </a>
+        </div>
+            <div class="col-lg-4 col-md-4 col-s-6 col-xs-12 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Carole Dieterich Original" data-image="images/img2.jpg" data-target="#image-gallery">
+                <img class="img-responsive" src="images/img2.jpg" alt="Short alt text">
+            </a>
+        </div>            
+            <div class="col-lg-4 col-md-4 col-s-6 col-xs-12 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Carole Dieterich Original" data-image="images/img5.jpg" data-target="#image-gallery">
+                <img class="img-responsive" src="images/img5.jpg" alt="Short alt text">
+            </a>
+        </div>
+            <div class="col-lg-4 col-md-4 col-s-6 col-xs-12 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Carole Dieterich Original" data-image="images/img6.jpg" data-target="#image-gallery">
+                <img class="img-responsive" src="images/img6.jpg" alt="Short alt text">
+            </a>
+        </div>
+            <div class="col-lg-3 col-md-4 col-s-6 col-xs-12 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Carole Dieterich Original" data-image="images/img3.jpg" data-target="#image-gallery">
+                <img class="img-responsive" src="images/img3.jpg" alt="Another alt text">
+            </a>
+        </div>
+            <div class="col-lg-3 col-md-4 col-s-6 col-xs-12 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Carole Dieterich Original" data-image="images/img4.jpg" data-target="#image-gallery">
+                <img class="img-responsive" src="images/img4.jpg" alt="Short alt text">
+            </a>
+        </div>
+</div>
+</div>
+
+<div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="image-gallery-title"></h4>
+            </div>
+            <div class="modal-body">
+                <img id="image-gallery-image" class="img-responsive" src="images/img1.jpg">
+            </div>
+            <div class="modal-footer">
+
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-primary" id="show-previous-image">Previous</button>
+                </div>
+
+                <div class="col-md-8 text-justify" id="image-gallery-caption">
+                    <a href="contact.html" id="carole-btn">Contact Carole</a>
+                </div>
+
+                <div class="col-md-2">
+                    <button type="button" id="show-next-image" class="btn btn-default">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	<footer>
+    <div id="highlight">
+			<div class="contact">				
+			<button id="contact_btn"><a id="btn" href="contact.html">Contact Carole</a></button>	
+			<h3>Call: (303) 475-2965</h3>
+			</div>	
+    </div>
+	</footer>
+	<script src=js/main.js></script>
+  	<script src=js/gallery.js></script>
+</body>
+</html>
